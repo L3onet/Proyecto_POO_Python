@@ -1,23 +1,26 @@
+from abc import abstractmethod
+from abc import ABCMeta
 import math
-from abc import ABC
 
-class Figura(ABC):
+class Figura(metaclass=ABCMeta):
     _area = float(0)
     _perimetro = float(0)
 
-    @staticmethod
-    def calcularArea():
+    @abstractmethod
+    def calcularArea(self):
         pass
 
-    @staticmethod
-    def calcularPerimetro():
+    @abstractmethod
+    def calcularPerimetro(self):
         pass
 
+    @abstractmethod
     def getArea(self):
-        return self._area
+        pass
 
+    @abstractmethod
     def getPerimetro(self):
-        return self._perimetro
+        pass
 
 class Circulo(Figura):
     __radio = float(0)
@@ -36,6 +39,11 @@ class Circulo(Figura):
     def calcularPerimetro(self):
         self._perimetro = (2 * math.pi) * self.__radio
 
+    def getArea(self):
+        return self._area
+
+    def getPerimetro(self):
+        return self._perimetro
 
 class Cuadrado(Figura):
     __lado = float(0)
@@ -53,6 +61,12 @@ class Cuadrado(Figura):
 
     def calcularPerimetro(self):
         self._perimetro = self.__lado * 4
+
+    def getArea(self):
+        return self._area
+
+    def getPerimetro(self):
+        return self._perimetro
 
 
 class Rectangulo(Figura):
@@ -75,3 +89,8 @@ class Rectangulo(Figura):
     def calcularPerimetro(self):
         self._perimetro = (self.__base * 2) + (self.__altura * 2)
 
+    def getArea(self):
+        return self._area
+
+    def getPerimetro(self):
+        return self._perimetro
