@@ -1,0 +1,51 @@
+El usuario introducirá dos números enteros (de no más de 6 cifras), uno en cada línea. Tu programa debe mostrar el mayor de ambos números.
+Cuidado: Como suele ocurrir en los retos de programación, hay que seguir exactamente las entradas y salidas (mira el ejemplo): NO es un programa interactivo, no debe avisar al usuario con frases como "Introduce un número" o "Dame un número". Sólo debe tomar dos datos numéricos enteros de la entrada estándar, analizarlos y mostrar un resultado que también será un número entero. Tampoco debe responder con nada similar a "Tu resultado es: ", ni comprobar si los números tienen menos de 7 cifras (esa información es para que escojas el tipo de datos adecuado). Del mismo modo, no debe existir ninguna pausa antes ni después de la ejecución del programa.
+
+
+El mínimo común múltiplo de varios números es el menor número que es múltiplo de todos ellos a la vez.
+Por ejemplo, el mcm de 3 y 7 es 21, el de 4 y 12 es 12, y el de 9 y 12 es 36.
+El usuario introducirá tres números enteros (positivos, de no más de 5 cifras), uno en cada línea. Tu programa debe mostrar el mínimo común múltiplo de esos tres números.
+Cuidado: Como suele ocurrir en los retos de programación, hay que seguir exactamente las entradas y salidas (mira el ejemplo): NO es un programa interactivo, no debe avisar al usuario con frases como "Introduce un número" o "Dame un número". Sólo debe tomar tres datos numéricos enteros de la entrada estándar, analizarlos y mostrar un resultado que también será un número entero. Tampoco debe responder con nada similar a "Tu resultado es: ", ni comprobar si los números tienen menos de 6 cifras (esa información es para que escojas el tipo de datos adecuado). Del mismo modo, no debe existir ninguna pausa antes ni después de la ejecución del programa.
+
+
+El usuario introducirá un primer número entero positivo (de no más de 6 cifras) que indicará la cantidad de casos de prueba. Después seguirán varias líneas, cada una con un número entero positivo (de no más de 15 cifras). Para cada uno de esos casos de prueba, tu programa debe mostrar el número, un espacio en blanco, un signo de igualdad, otro espacio en blanco y los factores primos de ese número (repetidos si es el caso), cada uno de ellos con un espacio en blanco a continuación.
+Cuidado: Como suele ocurrir en los retos de programación, hay que seguir exactamente las entradas y salidas (mira el ejemplo): NO es un programa interactivo, no debe avisar al usuario con frases como "Introduce un número" o "Dame un número". Sólo debe tomar datos numéricos enteros positivos de la entrada estándar, analizarlo y mostrar un resultado que también será una serie de números enteros. Del mismo modo, no debe existir ninguna pausa antes ni después de la ejecución del programa. No debes almacenar los datos de entrada en un array, sino dar el resultado para cada dato antes de leer la siguiente entrada.
+
+
+Crea un programa que dado un número entre 0,0001 y 0,9999 (y de no más de 4 cifras decimales), obtenga y muestre la correspondiente fracción irreducible.
+Por ejemplo, el número 0,25 se puede obtener a partir de 25/100, o de 2/8, o de 1/4, entre otros. La fracción irreducible es 1/4, que está formada por un numerador y un denominador que son primos entre sí.
+Nota: el programa no debe avisar al usuario con mensajes como "Introduzca un número". Debe leer directamente el número que introduzca el usuario. De igual modo, sólo debe mostrar la fracción irreducible encontrada, nada más. Tampoco debe hacer ninguna pausa antes ni después de la ejecución.
+
+
+Se trata de implementar un programa que sume los dígitos de un número entero no negativo. Por ejemplo, la suma de los dígitos del 3433 es 13.
+Para darle un poco más de emoción, el programa no se limitará a escribir el resultado de la suma, sino que también escribirá todos los sumandos utilizados: 3 + 4 + 3 + 3 = 13.
+Entrada
+La entrada consta de una serie de casos de prueba terminados con un número negativo. Cada caso de prueba es una simple línea con un número no negativo no mayor que 109 del que habrá que sumar todos sus dígitos.
+Salida
+Para cada caso de prueba se mostrará una línea en la que aparecerán cada uno de los dígitos separados por el signo +, tras lo cual aparecerá el símbolo = y la suma de todos los dígitos.
+Ten en cuenta que antes y después de cada símbolo (+ y =) hay un espacio.
+Nota: el programa no debe avisar al usuario con mensajes como "Introduzca un número". Debe leer directamente el número que introduzca el usuario y la respuesta debe ser exactamente como aparece aquí explicado y como se puede comprobar en el ejemplo. (Asegúrate de que has leído el resto de preguntas frecuentes antes de plantear tu solución)
+
+
+Seguro que has visto textos como "The quick brown fox jumps over the lazy dog" o "El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja" . Son "pangramas", textos que contienen todas las letras de un cierto alfabeto, quizá repetidas.
+Deberás crear un programa que reciba varias frases y que diga si cada una de ellas es un pangrama o no. Sólo deberás considerar las letras del alfabeto inglés (no te preocupes por las vocales acentuadas ni la eñe, entre otras), que podrán aparecer en mayúsculas o en minúsculas.
+La primera línea contendrá el número de frases y después aparecerá una nueva frase en cada línea. Para cada frase deberás responder SI cuando se trate de un pangrama o NO cuando no lo sea.
+
+
+"¡Javi! ¡Parece que éste tampoco le gusta!" se convirtió en cantinela habitual a la hora de la comida, antes de que el pequeño dejara definitivamente de comer potitos una tarde. Darle de comer era misión imposible; pese a la paciencia de sus padres, el niño había heredado el carácter cabezón del padre y mantenía la boca cerrada, inmune a los vuelos de la cucharita y a las monerías de quienes le rodeaban. Era necesario encontrar una solución.
+Se les ocurrió que, quizá, el aparentemente caprichoso rechazo a los potitos se debía a algún ingrediente concreto. Comenzaron a anotar, cuidadosamente, todos los ingredientes de cada potito que le daban, junto con un comentario de si el pequeño se lo había tomado o no. Tras varios días, estaban convencidos de que podrían averiguar cuáles eran los ingredientes que no le gustaban, y así comprar aquellos potitos que fuera a comerse. ¿Puedes ayudarles a encontrarlos?
+Entrada
+La entrada estará compuesta de múltiples casos de prueba. Cada uno comienza con un número indicando el número de potitos que se han intentado dar al bebé (como máximo 25).
+A continuación aparece una línea por cada potito. La línea comienza por SI: o NO: dependiendo de si el pequeño se comió o no el potito. Después aparece la lista de los ingredientes del potito separados por espacios. La lista se cierra con la palabra FIN, que no debe considerarse un ingrediente. Ningún potito tiene más de 10 ingredientes, y todos los ingredientes están compuestos por una única palabra de hasta 20 letras minúsculas.
+La entrada acaba con un caso de prueba sin potitos.
+Salida
+Para cada caso de prueba se deben mostrar, en una línea, los ingredientes que no le gustan al niño, ordenados alfabéticamente y separados por espacio. Si todos los ingredientes le gustan, se dejará la linea en blanco.
+
+
+Tienes un reloj digital con LEDs de 7 segmentos. Un día, al despertar de un sueño de ciencia-ficción, te preguntas: ¿cuántos segmentos se han encendido DESPUÉS DE X segundos, desde la posición 00:00:00?
+Considera que en cada segundo, todos los led se apagan y luego se encienden los correspondientes al instante actual.
+(Recuerda: no debe ser "amigable", sino estricto: no debe decir nada como "introduce los segundos" ni responder con nada como "la cantidad de LEDs es..."; debe tomar cada línea de datos de la entrada estándar, analizarla y mostrar los resultados en la salida estándar, tantas veces como líneas de entrada existan).
+
+
+If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+Find the sum of all the multiples of 3 or 5 below 1000.
